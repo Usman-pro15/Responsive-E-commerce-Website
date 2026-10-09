@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VERVE | Everyday Gear Store</title>
+<meta name="description" content="VERVE is a responsive online store with product search, a shopping cart, checkout and order tracking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs><pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="6" cy="6" r="2.6" fill="#000" opacity=".4"/></pattern></defs>
+<symbol id="p-shoe" viewBox="0 0 200 200"><ellipse cx="100" cy="170" rx="74" ry="7" fill="#000" opacity=".14"/><path class="fp" d="M30 140L33 98Q35 88 48 88L68 92Q80 66 104 68L128 98Q152 104 172 122Q184 128 184 140Z"/><path class="fs" opacity=".3" d="M138 106Q166 112 180 128Q184 134 184 140H128Z"/><path d="M28 138H186V146Q186 160 170 160H46Q28 160 28 146Z" fill="#fff"/><path d="M28 150H186" stroke="#000" opacity=".12" stroke-width="3"/><path d="M92 88l16 12M101 80l16 12M110 73l16 12" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/><path class="ss" d="M54 128Q92 114 132 124" fill="none" stroke-width="6" stroke-linecap="round"/><path d="M33 100Q50 94 68 92" fill="none" stroke="#000" opacity=".2" stroke-width="4"/></symbol>
+<symbol id="p-head" viewBox="0 0 200 200"><ellipse cx="100" cy="176" rx="64" ry="6" fill="#000" opacity=".14"/><path class="ss" d="M44 118V96a56 56 0 0 1 112 0V118" fill="none" stroke-width="12" stroke-linecap="round"/><path d="M56 100a44 44 0 0 1 88 0" fill="none" stroke="#fff" opacity=".25" stroke-width="3" stroke-linecap="round"/><rect class="fp" x="32" y="106" width="34" height="58" rx="16"/><rect class="fp" x="134" y="106" width="34" height="58" rx="16"/><rect class="fs" x="26" y="118" width="14" height="34" rx="7"/><rect class="fs" x="160" y="118" width="14" height="34" rx="7"/><rect x="46" y="114" width="6" height="30" rx="3" fill="#fff" opacity=".3"/><rect x="148" y="114" width="6" height="30" rx="3" fill="#fff" opacity=".3"/></symbol>
+<symbol id="p-watch" viewBox="0 0 200 200"><rect class="fs" x="76" y="14" width="48" height="56" rx="12"/><rect class="fs" x="76" y="130" width="48" height="56" rx="12"/><circle cx="100" cy="158" r="2.4" fill="#000" opacity=".35"/><circle cx="100" cy="170" r="2.4" fill="#000" opacity=".35"/><rect class="fp" x="62" y="56" width="76" height="88" rx="24"/><rect x="69" y="63" width="62" height="74" rx="18" fill="#0B1220"/><circle cx="100" cy="100" r="22" fill="none" stroke="#fff" opacity=".18" stroke-width="3"/><path class="ss" d="M100 78A22 22 0 0 1 122 100" fill="none" stroke-width="4" stroke-linecap="round"/><path d="M100 100V86M100 100l10 6" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/><rect class="fs" x="138" y="84" width="8" height="18" rx="3"/></symbol>
+<symbol id="p-pack" viewBox="0 0 200 200"><ellipse cx="100" cy="176" rx="56" ry="6" fill="#000" opacity=".14"/><path class="ss" d="M86 42Q86 20 100 20Q114 20 114 42" fill="none" stroke-width="7" stroke-linecap="round"/><path class="fp" d="M50 76Q50 36 100 36Q150 36 150 76V152Q150 170 132 170H68Q50 170 50 152Z"/><rect class="fs" x="44" y="94" width="10" height="50" rx="5"/><rect class="fs" x="146" y="94" width="10" height="50" rx="5"/><rect class="fs" x="64" y="108" width="72" height="48" rx="14"/><path d="M70 114H130" stroke="#fff" opacity=".55" stroke-width="3" stroke-linecap="round"/><path class="ss" d="M62 78Q100 98 138 78" fill="none" stroke-width="6" stroke-linecap="round"/><circle cx="100" cy="134" r="5" fill="#fff" opacity=".7"/></symbol>
+<symbol id="p-shade" viewBox="0 0 200 200"><ellipse cx="100" cy="150" rx="70" ry="6" fill="#000" opacity=".14"/><path class="sp" d="M26 82H94M106 82H174" stroke-width="9" stroke-linecap="round" fill="none"/><path d="M32 84H92V104Q92 126 62 126Q32 126 32 104Z" fill="#161A22"/><path d="M108 84H168V104Q168 126 138 126Q108 126 108 104Z" fill="#161A22"/><path d="M42 92H58L46 116Z" fill="#fff" opacity=".22"/><path d="M118 92H134L122 116Z" fill="#fff" opacity=".22"/><path class="sp" d="M94 88Q100 80 106 88" fill="none" stroke-width="6" stroke-linecap="round"/><path class="sp" d="M28 84L14 74M172 84L186 74" fill="none" stroke-width="6" stroke-linecap="round"/></symbol>
+<symbol id="p-buds" viewBox="0 0 200 200"><ellipse cx="100" cy="170" rx="60" ry="6" fill="#000" opacity=".14"/><rect x="76" y="44" width="12" height="56" rx="6" fill="#fff"/><circle cx="76" cy="46" r="17" fill="#fff"/><circle class="fs" cx="72" cy="46" r="5"/><rect x="112" y="44" width="12" height="56" rx="6" fill="#fff"/><circle cx="124" cy="46" r="17" fill="#fff"/><circle class="fs" cx="128" cy="46" r="5"/><rect class="fp" x="48" y="92" width="104" height="72" rx="32"/><path d="M50 118H150" stroke="#000" opacity=".15" stroke-width="3"/><circle cx="100" cy="105" r="3.5" fill="#4ADE80"/><rect class="fs" x="88" y="142" width="24" height="6" rx="3"/></symbol>
+<symbol id="p-cam" viewBox="0 0 200 200"><ellipse cx="100" cy="172" rx="70" ry="6" fill="#000" opacity=".14"/><path class="fs" d="M62 70L70 54H116L124 70Z"/><rect class="fp" x="30" y="68" width="140" height="92" rx="16"/><rect class="fs" x="30" y="84" width="24" height="76" rx="12" opacity=".4"/><rect x="134" y="76" width="24" height="10" rx="3" fill="#fff" opacity=".85"/><rect class="fs" x="128" y="44" width="20" height="10" rx="3"/><circle cx="100" cy="116" r="36" fill="#1B2230"/><circle cx="100" cy="116" r="28" fill="none" stroke="#9AA3B5" stroke-width="5"/><circle cx="100" cy="116" r="19" fill="#0B1019"/><circle cx="92" cy="108" r="6" fill="#fff" opacity=".45"/><circle cx="108" cy="124" r="3" fill="#6D8BFF" opacity=".7"/></symbol>
+<symbol id="p-bottle" viewBox="0 0 200 200"><ellipse cx="100" cy="176" rx="34" ry="5" fill="#000" opacity=".14"/><rect class="fs" x="84" y="14" width="32" height="20" rx="7"/><rect class="fs" x="90" y="32" width="20" height="14" opacity=".7"/><path class="fp" d="M74 54Q74 46 84 46H116Q126 46 126 54V158Q126 174 110 174H90Q74 174 74 158Z"/><rect class="fs" x="74" y="92" width="52" height="26" opacity=".85"/><path d="M92 105H108" stroke="#fff" stroke-width="3" stroke-linecap="round"/><rect x="82" y="56" width="7" height="100" rx="3.5" fill="#fff" opacity=".3"/></symbol>
+<symbol id="p-phone" viewBox="0 0 200 200"><ellipse cx="100" cy="180" rx="40" ry="5" fill="#000" opacity=".14"/><rect class="fp" x="62" y="18" width="76" height="156" rx="18"/><rect x="68" y="24" width="64" height="144" rx="13" fill="#0E1220"/><rect class="fs" x="68" y="24" width="64" height="144" rx="13" opacity=".4"/><rect x="88" y="30" width="24" height="6" rx="3" fill="#000"/><rect x="76" y="48" width="48" height="28" rx="8" fill="#fff" opacity=".9"/><path d="M82 58H104M82 66H96" stroke="#0E1220" stroke-width="3.5" stroke-linecap="round" opacity=".6"/><rect x="76" y="86" width="22" height="22" rx="7" fill="#fff" opacity=".8"/><rect x="102" y="86" width="22" height="22" rx="7" fill="#fff" opacity=".5"/><rect x="76" y="112" width="22" height="22" rx="7" fill="#fff" opacity=".5"/><rect x="102" y="112" width="22" height="22" rx="7" fill="#fff" opacity=".8"/><rect x="84" y="150" width="32" height="4" rx="2" fill="#fff" opacity=".6"/></symbol>
+<symbol id="p-tote" viewBox="0 0 200 200"><ellipse cx="100" cy="178" rx="68" ry="6" fill="#000" opacity=".14"/><path class="ss" d="M72 84V64a28 28 0 0 1 56 0V84" fill="none" stroke-width="8" stroke-linecap="round"/><path class="fp" d="M46 82H154L166 164Q167 174 157 174H43Q33 174 34 164Z"/><path class="fs" opacity=".4" d="M41 120H159L161 136H39Z"/><circle cx="100" cy="100" r="6" fill="#F5C451"/><path d="M50 90H150" stroke="#fff" opacity=".25" stroke-width="3"/></symbol>
+<symbol id="p-lamp" viewBox="0 0 200 200"><path d="M98 74L140 92L172 170H96Z" fill="#FFE9A8" opacity=".4"/><ellipse class="fs" cx="82" cy="170" rx="36" ry="8"/><path class="ss" d="M82 166L64 110L112 58" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><circle class="fs" cx="64" cy="110" r="7"/><path class="fp" d="M102 42L150 62L138 92L92 72Z"/><circle cx="120" cy="82" r="6" fill="#FFF3B0"/></symbol>
+<symbol id="p-spk" viewBox="0 0 200 200"><ellipse cx="100" cy="174" rx="58" ry="6" fill="#000" opacity=".14"/><path class="ss" d="M68 62Q100 22 132 62" fill="none" stroke-width="6" stroke-linecap="round"/><rect class="fp" x="48" y="58" width="104" height="112" rx="28"/><rect x="58" y="70" width="84" height="66" rx="16" fill="url(#dots)"/><circle class="fs" cx="82" cy="152" r="7"/><circle class="fs" cx="100" cy="152" r="7"/><circle class="fs" cx="118" cy="152" r="7"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+<symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-10a4 4 0 0 1 7-2.4A4 4 0 0 1 19 10c0 5.4-7 10-7 10z"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+<symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M10 7V4h4v3M6 7l1 13h10l1-13M10 11v6M14 11v6"/></symbol>
+<symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/></symbol>
+<symbol id="i-undo" viewBox="0 0 24 24"><path d="M9 6L4 11l5 5"/><path d="M4 11h10a6 6 0 0 1 0 12"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5L16 9.5"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<div class="ann">Free shipping on orders over <b>$100</b>. Use code <b>SAVE10</b> for 10% off your order.</div>
+<header class="hd"><div class="w bar">
+  <a class="logo" href="#shop" aria-label="VERVE home">VERVE<i>.</i></a>
+  <nav class="nav" id="nav" aria-label="Main"><a href="#shop" data-r="shop" class="on">Shop</a><a href="#deals" data-r="deals">Deals</a><a href="#orders" data-r="orders">My orders</a></nav>
+  <label class="sb" id="sb"><svg class="ui"><use href="#i-search"/></svg><input id="q" type="search" placeholder="Search products" aria-label="Search products" autocomplete="off"></label>
+  <div class="acts">
+    <button class="ib" id="sbtn" aria-label="Search" style="display:none"><svg class="ui"><use href="#i-search"/></svg></button>
+    <button class="ib" id="theme" aria-label="Switch light or dark theme"><svg class="ui"><use href="#i-sun"/></svg></button>
+    <button class="ib" id="cartb" aria-label="Open cart"><svg class="ui"><use href="#i-bag"/></svg><span class="cnt" id="cnt">0</span></button>
+    <button class="ib" id="menu" aria-label="Open menu" aria-expanded="false"><svg class="ui"><use href="#i-menu"/></svg></button>
+  </div>
+</div></header>
+
+<main class="w">
+<div id="shopView">
+  <section class="hero" id="top">
+    <i class="blob a"></i><i class="blob b"></i>
+    <div class="hg">
+      <div>
+        <span class="eyebrow">New season drop</span>
+        <h1>Everyday gear that <span class="hl">stands out.</span></h1>
+        <p class="lead">Hand-picked sneakers, audio, tech and bags. Fast delivery, easy returns and prices that make sense.</p>
+        <div class="cta"><a class="btn" href="#shop">Shop collection <svg class="ui"><use href="#i-arrow"/></svg></a><a class="btn o" href="#deals">View deals</a></div>
+        <div class="hs"><div><b>12</b><span>Curated products</span></div><div><b>4.8</b><span>Average rating</span></div><div><b>30 days</b><span>Free returns</span></div></div>
+      </div>
+      <div class="sw" id="sw"><div class="stage" id="stage"><div class="ring" id="ring"></div></div></div>
+    </div>
+  </section>
+
+  <div class="feat">
+    <div class="ft"><span class="ic"><svg class="ui"><use href="#i-truck"/></svg></span><div><b>Free shipping</b><span>On orders over $100</span></div></div>
+    <div class="ft"><span class="ic"><svg class="ui"><use href="#i-undo"/></svg></span><div><b>Easy returns</b><span>30-day money back</span></div></div>
+    <div class="ft"><span class="ic"><svg class="ui"><use href="#i-shield"/></svg></span><div><b>Secure checkout</b><span>Your details stay safe</span></div></div>
+    <div class="ft"><span class="ic"><svg class="ui"><use href="#i-chat"/></svg></span><div><b>Friendly support</b><span>We reply within a day</span></div></div>
+  </div>
+
+  <section class="sec" id="shop">
+    <div class="sh"><div><h2>Shop the collection</h2><p class="sub" id="count">12 products</p></div>
+      <select class="sel" id="sort" aria-label="Sort products"><option value="feat">Featured</option><option value="lo">Price: low to high</option><option value="hi">Price: high to low</option><option value="top">Top rated</option></select></div>
+    <div class="tb"><div class="chips" id="chips" role="group" aria-label="Categories"></div></div>
+    <div class="grid" id="grid" aria-live="polite"></div>
+  </section>
+
+  <section class="deal" id="deals">
+    <div><h2>Flash sale ends tonight</h2><p>Use code <code>SAVE10</code> at checkout for an extra 10% off.</p></div>
+    <div class="cd" aria-label="Time left" role="timer"><div><b id="cH">00</b><small>hours</small></div><div><b id="cM">00</b><small>mins</small></div><div><b id="cS">00</b><small>secs</small></div></div>
+  </section>
+</div>
+
+<div id="ordersView" hidden>
+  <section class="sec"><div class="sh"><div><h2>My orders</h2><p class="sub">Track your orders. In this demo, status updates by itself every few seconds.</p></div><a class="btn o" href="#shop" style="color:inherit">Continue shopping</a></div>
+  <div class="orders" id="orders"></div></section>
+</div>
+</main>
+
+<footer><div class="w"><div class="fg">
+  <div><div class="logo">VERVE<i>.</i></div><p style="margin-top:.8rem">Everyday gear designed to last. Get early access to drops and offers.</p>
+    <form class="nl" id="nl" novalidate><input id="ne" type="email" placeholder="Your email address" aria-label="Email for newsletter"><button class="btn" type="submit">Subscribe</button></form><p class="nlm" id="nlm" role="status"></p></div>
+  <div><h3>Shop</h3><ul><li>Footwear</li><li>Audio</li><li>Wearables</li><li>Bags</li></ul></div>
+  <div><h3>Help</h3><ul><li>Shipping</li><li>Returns</li><li>Contact us</li><li>Track order</li></ul></div>
+</div><p class="cp">&copy; <span id="yr">2026</span> VERVE. Demo store: no real payments are taken.</p></div></footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="dr" id="dr" aria-label="Shopping cart" aria-hidden="true">
+  <div class="dh"><h2>Your cart</h2><button class="ib" data-close="cart" aria-label="Close cart"><svg class="ui"><use href="#i-close"/></svg></button></div>
+  <div class="ship" id="ship"></div>
+  <div class="cb" id="cb"></div>
+  <div class="df" id="df"></div>
+</aside>
+
+<dialog id="qv" aria-label="Product details"><button class="x" data-close="dlg" aria-label="Close"><svg class="ui"><use href="#i-close"/></svg></button><div class="qvb" id="qvb"></div></dialog>
+
+<dialog id="co" aria-label="Checkout"><button class="x" data-close="dlg" aria-label="Close"><svg class="ui"><use href="#i-close"/></svg></button>
+  <div class="cog">
+    <form class="cof" id="cof" novalidate><h2>Checkout</h2>
+      <div class="g2"><label>Full name<input type="text" id="cn" autocomplete="name"><span class="err"></span></label><label>Email<input type="email" id="ce" autocomplete="email"><span class="err"></span></label></div>
+      <label>Delivery address<input type="text" id="ca" autocomplete="street-address"><span class="err"></span></label>
+      <div class="g2"><label>City<input type="text" id="cc" autocomplete="address-level2"><span class="err"></span></label><label>Phone<input type="tel" id="cp" autocomplete="tel"><span class="err"></span></label></div>
+      <div class="pay" role="radiogroup" aria-label="Payment method"><label><input type="radio" name="pm" value="card" checked> Card</label><label><input type="radio" name="pm" value="cod"> Cash on delivery</label></div>
+      <div class="cardf" id="cardf"><label>Card number<input type="text" id="cnum" inputmode="numeric" placeholder="1234 5678 9012 3456" maxlength="19"><span class="err"></span></label>
+        <div class="g2"><label>Expiry<input type="text" id="cex" placeholder="MM/YY" maxlength="5"><span class="err"></span></label><label>CVC<input type="text" id="ccv" inputmode="numeric" maxlength="4"><span class="err"></span></label></div></div>
+      <button class="btn" type="submit" id="pay">Place order</button>
+    </form>
+    <div class="cos"><h3>Order summary</h3><div id="cosb"></div></div>
+  </div>
+  <div class="ok" id="ok"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="25.5"/><path d="M38 51l9 9 17-19"/></svg><h2>Order placed!</h2><p id="okp"></p>
+    <div class="cta"><a class="btn" href="#orders" data-close="dlg">View my orders</a><button class="btn o" data-close="dlg" type="button">Keep shopping</button></div></div>
+</dialog>
+<div id="toasts" role="status" aria-live="polite"></div>
+<div class="cf" id="cf" aria-hidden="true"></div>
+
+<script href="file.js" >
+
+</script>
+</body>
+</html>
